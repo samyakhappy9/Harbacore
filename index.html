@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <style>
+    * {
+     box-sizing: border-box;
+    }
+    body {
+     font-family: Arial;
+     margin: 5px;
+    }
+    div{
+      max-width:100%;
+    }
+    .row {
+     display: flex;
+    }
+    .mt{
+      margin-top:7%;
+    }
+    .mb{
+      margin-bottom:10%;
+    }
+    .side {
+     flex: 20%;
+     padding: 5px;
+    }
+    .full-height{
+      width:inherit;
+      height:100%;
+    }
+    .main {
+     flex: 30%;
+     background-color: white;
+     padding: 5px;
+     }
+     .fakeimg {
+     background-color: #aaa;
+     width: 70%;
+     padding: 10px;
+     margin: 10px;
+     }
+     .abc{
+      margin-left: 20%;
+     }
+  </style>
+</head>
+
+<body>
+        <header class="header mb">
+          <div class="mx-auto"><h3></h3></div>
+        </header>
+               <div class="container">
+                 <div class="row">
+                   <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <ul class="carousel-indicators">
+                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ul>
+                        <div class="carousel-inner">
+                              <div class="carousel-item active">
+           <img class="img-fluid" src="grand-launch-banner-website-big-size-890x600-2-copy_470865f0-a029-11ea-948b-2f96b99b09c3.jpg" >
+                              </div>
+                              <div class="carousel-item">
+                                <img
+                                class="img-fluid"
+                                src="banyam_175914d0-937c-11ea-b515-8b3de73a81cc.jpg">
+                              </div>
+                              <div class="carousel-item">
+                                 <img
+                                 class="img-fluid"
+                                 src="premium-guitar_ea4bc180-0540-11ea-bf9f-abb97e5b4784.jpg">
+                              </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                             <span class="carousel-control-next-icon"></span>
+                        </a>
+                      </div>
+                   </div>
+                   <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <img class="img-fluid full-height" src="emi-banner_5d07eea0-7fdf-11ea-b149-dd6ab15a61ef.jpg" >
+                   </div>
+                 </div>
+                 <div class="row mt">
+                   <div class="col-sm-12">
+                    <div class="mx-auto text-dark font-weight-bolder text-center">
+                      <h1>Top Products</h1>
+                    </div>
+                   </div>
+                 </div>
+                  <div class="row">
+                    <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 ">
+                        <img src="audio-interface_a8874aaf-8635-4696-96d8-8e3b5024c6d0_600x.webp" class="img-fluid">
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                        <img src="electric-drums_600x.webp"  class="img-fluid">
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                        <img src="midi_600x.webp"  class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="row mt">
+                  <div class="mx-auto text-dark font-weight-bolder text-center mt-4">
+                    <h1>Important Info</h1>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="side">
+                     <div class="fakeimg text-dark font-weight-bolder text-center abc col-xs-3 " style="height:270px;">Image</div>
+                  </div>
+                  <div class="side">
+                     <div class="fakeimg text-dark font-weight-bolder text-center" style="height:60px;">Heading 1</div><br>
+                     <div class="fakeimg text-dark font-weight-bolder text-center" style="height:60px;">Heading 2</div><br>
+                     <div class="fakeimg text-dark font-weight-bolder text-center" style="height:60px;">Heading 3</div>
+                   </div>
+                </div>
+               </div>
+<footer class="footer mx-auto">
+  <h3><br>
+  </h3>
+</footer>
+
+ </body>
+</html>
+
+
+
