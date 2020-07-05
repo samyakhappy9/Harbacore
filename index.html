@@ -11,7 +11,7 @@
   <style>
     * {
      box-sizing: border-box;
-    }
+    } 
     body {
      font-family: Arial;
     }
@@ -19,20 +19,12 @@
     div{
       max-width:100%;
     }
-   
     .mt{
       margin-top:7%;
     }
     .mb{
       margin-bottom:7%;
-    }
-    .hero-img{
-      width: 800px;
-      max-width: 100%;
-    }
-    .row-center{
-      text-align: center;
-    }    
+    }  
     .col-centered {
       margin-left: auto;
       margin-right: auto;
@@ -42,9 +34,20 @@
      background-color: white;
      padding: 5px;
      }
+     .emi-banner-2{
+       max-width: 100%;
+       max-height: 100%;
+       background-image: url("emi-banner_5d07eea0-7fdf-11ea-b149-dd6ab15a61ef.jpg");
+       background-size: cover;
+       height:inherit;
+     }
+     
      .top-products{
        width:400px;
        height:auto;
+     }
+     .row-centered{
+      text-align: center;
      }
      .fakeimg {
      background-color: #aaa;
@@ -57,6 +60,24 @@
      .ml-15{
        margin-left: 0!important;
      }
+     .height{
+       overflow: auto;
+       height:inherit;
+       max-height: 100%;
+     }
+     @media (max-width: 768px){
+       .emi-banner{
+        margin-top: 1rem;
+        max-width: 100%;
+        max-height: 100%;
+        background-image: url("emi-banner_5d07eea0-7fdf-11ea-b149-dd6ab15a61ef.jpg");
+        background-size: cover;
+        height:400px;
+       }
+       .emi-banner-2{
+         background-image: none;
+       }
+     }
   </style>
 </head>
 
@@ -68,7 +89,7 @@
 
   <section id="home" class="container">
     <div class="row mx-auto">
-    <div class="col-md-8 mb-2">
+    <div class="col-md-8">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ul class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -97,9 +118,10 @@
           <span class="carousel-control-next-icon"></span>
     </a>
   </div>
-</div>
-  <div class="col-md-4 mx-auto">
-  <img class="img-fluid full-height" src="emi-banner_5d07eea0-7fdf-11ea-b149-dd6ab15a61ef.jpg" >
+</div>  
+  <div class="col-md-4 mx-auto emi-banner-2">
+    <div class="emi-banner height"></div>
+     <!-- <img class="img-fluid full-height" src="emi- banner_5d07eea0-7fdf-11ea-b149-dd6ab15a61ef.jpg" >  -->
   </div>
 </div>
     </section>
@@ -111,7 +133,8 @@
       </div>
       </div>
     </div>
-    <div class="row mx-auto container">
+    <div class="container">
+    <div class="row mx-auto row-centered">
       <div class="col-md-4 p-2">
           <img src="audio-interface_a8874aaf-8635-4696-96d8-8e3b5024c6d0_600x.webp" class="img-fluid top-products">
       </div>
@@ -122,6 +145,7 @@
           <img src="midi_600x.webp"  class="top-products img-fluid">
       </div>
   </div>
+</div>
 </section>
   <section id="imp-info" class="container">
   <div class="row mt mx-auto">
